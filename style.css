@@ -16,6 +16,16 @@ img.p{
     max-width: 100px;
 }
 
+#home{
+    margin-top: 50px;
+}
+
+#game {    
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
 div#game div{
     display: inline-block;
 }
