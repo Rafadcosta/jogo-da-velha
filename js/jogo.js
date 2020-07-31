@@ -49,10 +49,10 @@ $(document).ready( function (){
         var ponto = 0;
 
         if((rodada % 2 == 1)){
-            icone = 'url("../images/m1.png")';
+            icone = 'url("images/m1.png")';
             ponto = -1;
         } else {
-            icone = 'url("../images/m2.png")';
+            icone = 'url("images/m2.png")';
             ponto = 1;
         }
 
