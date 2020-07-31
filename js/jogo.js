@@ -22,12 +22,20 @@ $(document).ready( function (){
     $('#btn_play').click ( function () {
 
         if($('#nick1').val() == '') {
-            alert('Falta o apelido player 1');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Falta o nick player 1!'
+              });
             return false;
         }
 
         if($('#nick2').val() == '') {
-            alert('Falta o apelido player 1');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Falta o nick player 2!'
+              });
             return false;
         }
 
@@ -120,17 +128,29 @@ $(document).ready( function (){
 
     }
 
-    function winner(pontos){
+    async function winner(pontos){
         if(pontos == -3){
             var move_1 = $('#nick1').val();
-            alert(move_1 + ' venceu!');
+            await Swal.fire({
+                imageUrl: 'http://gifgifs.com/animations/creatures-cartoons/anime/Chacha.gif',
+                imageWidth: 100,
+                imageHeight: 100,
+                title: move_1 + ' venceu!',
+                text: 'Parabéns!'
+              });
             $('.jogada').off();
             refreshPage();
         }
 
         else if(pontos == 3){
             var move_2 = $('#nick2').val();
-            alert(move_2 + ' venceu!');
+            await Swal.fire({
+                imageUrl: 'http://gifgifs.com/animations/creatures-cartoons/anime/Chacha.gif',
+                imageWidth: 100,
+                imageHeight: 100,
+                title: move_2 + ' venceu!',
+                text: 'Parabéns!'
+              });
             $('.jogada').off();
             refreshPage();
         }
