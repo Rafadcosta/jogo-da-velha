@@ -125,13 +125,19 @@ $(document).ready( function (){
             var move_1 = $('#nick1').val();
             alert(move_1 + ' venceu!');
             $('.jogada').off();
+            refreshPage();
         }
 
         else if(pontos == 3){
             var move_2 = $('#nick2').val();
             alert(move_2 + ' venceu!');
             $('.jogada').off();
+            refreshPage();
         }
     }
+
+    function refreshPage(){
+        window.location.reload();
+    } 
 
 });
