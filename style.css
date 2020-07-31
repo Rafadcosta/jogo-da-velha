@@ -58,7 +58,7 @@ input:focus{
 
 #game {    
     display: none;
-    margin-top: 0 auto;
+    margin: 350px auto;
     align-items: center;
     justify-content: center;
 }
