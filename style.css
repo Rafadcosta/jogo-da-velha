@@ -8,9 +8,26 @@ body {
 	background-attachment: fixed;
 }
 
-p{
-    font-size: 10px;
-    
+.fill{
+	background: -webkit-linear-gradient(left, #b169f5 0%, #cf7eb0 100%);
+	background: linear-gradient(left, #b169f5 0%, #cf7eb0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 50px;
 }
 
 img.c{
@@ -19,24 +36,47 @@ img.c{
 
 img.p{
     max-width: 100px;
+    
 }
 
-#home{
-    margin-top: 50px;
+input{
+    margin-top: 25px;
+    height: 25px;
+    background: #FFDDCF;
+    border-radius: 10px;
+    border: 4px solid #B28AE4;
+    padding: 10px 15px;
+    font-family: 'Recursive', sans-serif;
+    text-align: center;
+    color: #000;
 }
+
+input:focus{
+    outline: none;
+}
+
 
 #game {    
     display: none;
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 div#game div{
     display: inline-block;
 }
 
+.c{
+    margin-bottom: 25px;
+}
+
 div#credit{
     position: absolute;
     bottom: 0;
     right: 25px;
+}
+
+p{
+    font-size: 10px;    
 }
