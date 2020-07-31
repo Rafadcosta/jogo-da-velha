@@ -48,11 +48,18 @@ $(document).ready( function (){
         var icone = '';
         var ponto = 0;
 
+        // var origin = window.location.origin;
+        // console.log(origin);
+        // var pathname = window.location.pathname;
+        // console.log(pathname);
+
         if((rodada % 2 == 1)){
             icone = 'url("images/m1.png")';
+            // icone = 'url("'+origin+pathname+'images/m1.png")';
             ponto = -1;
         } else {
             icone = 'url("images/m2.png")';
+            // icone = 'url("'+origin+pathname+'images/m1.png")';
             ponto = 1;
         }
 
