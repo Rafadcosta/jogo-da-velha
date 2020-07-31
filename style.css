@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Recursive', sans-serif;
+}
+
+p{
+    font-size: 10px;
+}
+
+img.c{
+    max-width: 200px;
+}
+
+img.p{
+    max-width: 100px;
+}
+
+div#game div{
+    display: inline-block;
+}
