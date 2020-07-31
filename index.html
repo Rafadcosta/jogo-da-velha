@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Jogo da velha</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css " href="style.css">
+	</head>
+	<body>
+
+		<div id="home" align="center">
+			<table width="600px;">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+
+					<tr>
+						<td align="center">
+							<img class ="c"src="images/p1.png" alt="">
+							<input id="nick1"type="text" maxlength="10" placeholder="Apelido player 1">
+						</td>
+						
+
+						<td align="center">
+							<img id="btn_play" class ="p"src="images/play.png" alt="">
+						</td>
+
+
+						<td align="center">
+							<img class ="c"src="images/p2.png" alt="">
+							<input id="nick2"type="text" maxlength="10" placeholder="Apelido player 2">
+						</td>
+						
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="game" align="center">
+			<div>
+				<img class="c"src="images/p1.png" alt="">
+				<br/>
+				<span id="nick_1"></span>
+			</div>
+
+			<div>
+				<table >
+					<tr>
+						<td style="border-bottom: solid 2px #3085D1; border-right: solid 2px #3085D1;">
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td style="border-bottom: solid 2px #3085D1; border-right: solid 2px #3085D1;">
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td style="border-bottom: solid 2px #3085D1;"> 
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td style="border-bottom: solid 2px #3085D1; border-right: solid 2px #3085D1;">
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td style="border-bottom: solid 2px #3085D1; border-right: solid 2px #3085D1;"> 
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td style="border-bottom: solid 2px #3085D1; ">
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td style="border-right: solid 2px #3085D1;">
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td style="border-right: solid 2px #3085D1;"> 
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+						<td>
+							<div style="width: 70px; height: 60px;"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<img class ="c"src="images/p2.png" alt="">
+				<br/>
+				<span id="nick_2"></span>
+			</div>
+		</div>
+
+
+		<!-- <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p> -->
+
+		<script src="js/jquery-2.2.1.js"></script>
+		<script src="js/jogo.js"></script>
+	</body>
+</html>
